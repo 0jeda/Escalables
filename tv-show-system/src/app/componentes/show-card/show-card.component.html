@@ -1,0 +1,8 @@
+<!-- <div class="{{isSelected ? 'selected' : ''}}"> -->
+<div [ngClass]="{'selected':isSelected}">
+    <img src="{{show.image}}" alt="">
+    <h2>{{show.title}}</h2>
+    <p>{{show.description !="" ? show.description : "Sin descripción"}}</p>
+    <button (click)="onSelected()">{{isSelected ? "Deseleccionar" : "Seleccionar"}}</button>
+    <button (click)="delete()">Eliminar</button>
+</div>
