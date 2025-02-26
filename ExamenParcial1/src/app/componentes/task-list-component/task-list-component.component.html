@@ -1,0 +1,7 @@
+<div class="contenedor">
+    <div [ngClass]="{'isAlredy': completado, 'tarea': !completado}">
+        <button class="ready" (click)="listo()">{{ completado ? "Reabrir" : "Terminada" }}</button>
+        <p>{{ task.id }}.- {{ task.title }}</p>
+        <button class="delete" (click)="delete()">Eliminar</button>
+    </div>    
+</div>

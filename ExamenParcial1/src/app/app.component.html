@@ -1,0 +1,4 @@
+<div class="contenedor">
+  <h1>Lista de tareas - Ojeda Gutierrez</h1>
+<app-task-list-component *ngFor="let task of tasks" [task]="task" (deleteEvent)="deleteByName($event)" (markEvent)="markTask($event)">{{task}}</app-task-list-component>
+</div>
